@@ -1,139 +1,80 @@
-# Anuj Waghulde | Software Engineer Portfolio
+# Portfolio Website
 
-A modern single-page portfolio website for Anuj Waghulde, showcasing software engineering work across backend systems, embedded/network platforms, AI-assisted tooling, and full-stack product development.
+A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. The site is designed to present a developer profile in a clean, professional format with sections for experience, projects, skills, education, achievements, and contact information.
 
 ## Overview
 
-This project is a personal portfolio built as a responsive static website with a dark, professional design and a strong engineering focus. It highlights:
+This project is a single-page portfolio website that serves as a digital resume and showcase for a software engineer or developer. It highlights technical capabilities, project work, professional background, and key accomplishments in a visually engaging layout.
 
-- current work at Semtech Advanced Systems
-- backend and embedded systems experience
-- AI and agentic engineering projects
-- academic and personal projects
-- achievements, education, and certifications
-- contact details and resume download
+## Features
 
-## Featured profile
+- Responsive single-page layout for desktop, tablet, and mobile devices
+- Modern dark-themed UI with polished typography and visual styling
+- Fixed navigation bar with smooth scrolling between sections
+- Hero section with profile introduction and call-to-action buttons
+- Experience timeline for professional roles and internships
+- Project showcase cards for featured work
+- Skills section grouped by technology area
+- Education and certification details
+- Achievements and competitive-programming highlights
+- Contact section with email, phone, social links, and resume download
 
-Anuj is a software engineer building tools and platforms for:
+## Technologies used
 
-- backend services and REST APIs
-- embedded and LTE/5G router systems
-- AI agents and RAG-based workflows
-- CI/CD pipelines and release automation
-- network diagnostics, VPN, DHCP/DNS, and system observability
-
-He currently works as a Software Engineer at Semtech Advanced Systems, Pune, and previously served as a Software Engineer Intern and Software Developer Intern.
-
-## Site sections
-
-The portfolio includes:
-
-- Hero section and intro
-- About / focus areas
-- Experience timeline
-- Featured work projects
-- Academic and personal projects
-- Skills and tools
-- Achievements and competitive programming highlights
-- Education and certifications
-- Contact and resume download
-
-## Key technologies
-
-The website reflects a broad technical stack, including:
-
-- Python
-- C++
-- Java
+- HTML5
+- CSS3
 - JavaScript
-- Flask and REST APIs
-- AI agents, MCP, and RAG workflows
-- GitHub Actions and CI/CD
-- Linux, networking, and embedded systems
-- Docker, Grafana, Plotly
-- MySQL, PostgreSQL, MongoDB, Firebase
+- Font Awesome icons
+- Google Fonts
 
-## Featured projects
+## Project structure
 
-### Work at Semtech
-
-- AI-Powered CVE Analysis Pipeline
-  - CVE triage for embedded Linux systems using BlackDuck, NVD, OSV.dev, and Yocto data
-  - automated patch generation and review flow
-
-- NetworkOps Copilot
-  - RAG-powered assistant for device analysis using REST and SSH tools
-  - helps with routes, VPN, DHCP/DNS, logs, and operational triage
-
-- Release Intelligence
-  - AI-driven investigation layer over GitHub Actions, dashboards, and CI logs
-  - correlates failures across build, device, and network systems
-
-- Voice-Controlled Router Management
-  - speech-driven router operations via REST interfaces and cloud control endpoints
-
-### Academic and personal projects
-
-- TECHNOVATE 2023 event website
-- Cineflix movie platform
-- Dental disease prediction using ML
-- Mindmate mental-health assistant
-- Healthcare app
-- Automated face lock with OpenCV and Arduino
-- Chemical company website
-- Blood bank system
-- Execution dashboards for embedded platform operations
+```text
+PortfolioWebsite/
+├── index.html
+├── README.md
+├── resume/
+│   └── Resume.pdf
+└── assets/
+    └── optional images and supporting files
+```
 
 ## Local setup
-
-This is a static HTML portfolio, so no build tool or framework install is required.
 
 ### Option 1: open directly
 
 Open `index.html` in a browser.
 
-### Option 2: run a local web server
+### Option 2: run a local server
 
-From the project directory:
+From the project directory, run:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
+Then visit:
 
 ```text
 http://localhost:8000
 ```
 
-## Project structure
+## Usage
 
-```text
-Anuj_Portfolio_Website/
-├── index.html
-├── README.md
-├── resume/
-│   └── Anuj_Waghulde_Resume.pdf
-└── (additional static assets if added later)
-```
+- Customize the content in `index.html` to match the desired portfolio information
+- Update contact links, resume file, and project descriptions as needed
+- Replace placeholder images or project thumbnails with real assets
+- Deploy the site to GitHub Pages, Netlify, or any static hosting platform
 
 ## Deployment
 
-This site can be deployed to any static hosting service, including GitHub Pages or Netlify.
+This portfolio can be hosted as a static site on any web host. Common options include GitHub Pages and Netlify.
 
 ## Contact
 
-- Email: anujrw18@gmail.com
-- Phone: +91 91462 37138
-- LinkedIn: https://www.linkedin.com/in/anuj-waghulde-37ab49224/
-- GitHub: https://github.com/war-18
-
-## Resume
-
-A downloadable PDF resume is embedded in the portfolio and is expected to live in the `resume/` folder.
+Add your preferred email, phone number, LinkedIn, and GitHub profile in the contact section of the page.
 
 ## License
 
-This repository is intended for personal portfolio use. Please check the project license file if one is added to the repository.
+This project is intended for personal portfolio use. Add or update the license as needed for your own repository.
 
