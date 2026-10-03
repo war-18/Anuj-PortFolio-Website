@@ -68,12 +68,24 @@ h1 span{color:var(--amb)}
 .job:before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg2);border:2px solid var(--mut)}
 .job.now:before{background:var(--amb);border-color:var(--amb)}
 .job .box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.job.now .box{border-color:#5a4720}
 .jh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;margin-bottom:4px}
 .jh h3{font-size:1.25rem}.jh span{font:500 .84rem 'IBM Plex Mono';color:var(--amb)}
 .org{color:var(--mut);font-size:.94rem;margin-bottom:10px}
 .job ul{padding-left:18px;color:#c3cde2;display:grid;gap:7px;font-size:.95rem}
 .job li::marker{color:var(--amb)}.job li b{color:var(--tx);font-weight:600}
+.job.now:before{width:18px;height:18px;left:-10px;top:6px;animation:pa 2s infinite}
+@keyframes pa{0%{box-shadow:0 0 0 0 rgba(255,181,71,.6)}70%,100%{box-shadow:0 0 0 12px transparent}}
+.job.now .box{border-color:var(--amb);background:linear-gradient(160deg,#2a2330,#17213a 55%);box-shadow:0 0 0 1px rgba(255,181,71,.25),0 26px 70px rgba(255,181,71,.10);padding:28px}
+.job:not(.now) .box{background:#131b30}
+.cur,.old{display:inline-flex;align-items:center;gap:7px;vertical-align:middle;margin-left:10px;font:500 .72rem 'IBM Plex Mono';letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;border-radius:99px}
+.cur{background:rgba(91,227,160,.14);color:var(--ok);border:1px solid rgba(91,227,160,.4)}
+.cur i{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:pg 2s infinite}
+.old{background:rgba(154,167,194,.1);color:var(--mut);border:1px solid var(--line)}
+.job.now .jh span{background:var(--amb);color:#1a1200;padding:3px 12px;border-radius:99px;font-weight:600}
+.ov{display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px 28px;margin-bottom:36px}.ov h3{font-size:1.2rem;margin-bottom:6px}.ov p{color:var(--mut);max-width:560px;font-size:.94rem}.ov .tags{max-width:340px}.cta{margin-top:40px;text-align:center}
+.wp{margin-top:26px;padding-top:22px;border-top:1px dashed #5a4720}
+.wp h4{font:700 1.05rem 'Bricolage Grotesque';margin-bottom:16px;display:flex;gap:10px;align-items:center}.wp h4 i{color:var(--amb)}
+.wp .feat{margin:0}
 /* projects */
 .feat{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:56px}
 .gh{display:flex;align-items:center;gap:12px;margin-bottom:6px}.gh i{color:var(--amb)}.gd{color:var(--mut);font-size:.93rem;margin-bottom:22px}
@@ -140,7 +152,7 @@ footer{padding:26px 0;text-align:center;color:var(--mut);font-size:.85rem;border
   <h1>Engineering <span>backend, embedded</span> and AI-driven systems.</h1>
   <p class="sub">I architect <b>Python and C++ platforms</b> for networked devices, design the <b>APIs and pipelines</b> around them, and build <b>AI agents</b> that help engineers move faster.</p>
   <div class="btns">
-   <a href="#projects" class="btn p"><i class="fas fa-layer-group"></i>View my work</a>
+   <a href="#experience" class="btn p"><i class="fas fa-layer-group"></i>View my work</a>
    <a href="resume/Anuj_Waghulde_Resume.pdf" download class="btn"><i class="fas fa-download"></i>Resume</a>
    <a href="#contact" class="btn"><i class="fas fa-envelope"></i>Contact</a>
   </div>
@@ -184,11 +196,16 @@ footer{padding:26px 0;text-align:center;color:var(--mut);font-size:.85rem;border
 
 <section id="experience" class="alt"><div class="wrap">
  <h2>Experience</h2>
- <p class="lead">Three years at Semtech, from intern to designing frameworks, pipelines and AI tooling.</p>
+ <p class="lead">What I do at Semtech day to day, and the roles that led here.</p>
+ <div class="ov">
+  <div><h3>Semtech Advanced Systems</h3>
+  <p>I work on AirLink embedded LTE/5G router platforms: the device-level features and networking stack, plus the cloud-connected services, release pipelines and AI tooling built around them.</p></div>
+  <div class="tags"><span>Embedded platforms</span><span>Networking</span><span>Backend &amp; APIs</span><span>CI/CD pipelines</span><span>AI-agent tooling</span></div>
+ </div>
  <div class="tl">
   <div class="job now"><div class="box">
-   <div class="jh"><h3>Software Engineer</h3><span>Jul 2024 – Present</span></div>
-   <div class="org">Semtech Advanced Systems, Pune</div>
+   <div class="jh"><h3>Software Engineer <b class="cur"><i></i>Current</b></h3><span>Jul 2024 – Present</span></div>
+   <div class="org">Semtech Advanced Systems, Pune · AirLink LTE/5G router platforms</div>
    <ul>
     <li>Architect reusable <b>Python/C++ frameworks</b> for embedded LTE/5G router platforms: REST APIs, configuration, firmware operations, diagnostics and system services.</li>
     <li>Develop device features across AirLink platforms and cellular modules, including cloud connectivity, admin interfaces, event reporting and remote access.</li>
@@ -199,22 +216,23 @@ footer{padding:26px 0;text-align:center;color:var(--mut);font-size:.85rem;border
    </ul>
   </div></div>
   <div class="job"><div class="box">
-   <div class="jh"><h3>Software Engineer Intern</h3><span>Jul 2023 – Jun 2024</span></div>
+   <div class="jh"><h3>Software Engineer Intern <b class="old">Previous</b></h3><span>Jul 2023 – Jun 2024</span></div>
    <div class="org">Semtech Advanced Systems</div>
    <ul><li>Wrote Python tooling for firmware upgrade/downgrade, device configuration, connectivity checks and log collection on LTE/5G routers.</li>
    <li>Built Flask/Plotly dashboards to visualise execution data and device status.</li></ul>
   </div></div>
   <div class="job"><div class="box">
-   <div class="jh"><h3>Software Developer Intern</h3><span>Apr – May 2023</span></div>
+   <div class="jh"><h3>Software Developer Intern <b class="old">Previous</b></h3><span>Apr – May 2023</span></div>
    <div class="org">Vspace Software Pvt. Ltd.</div>
    <ul><li>Built ML models for dental image classification and disease detection.</li></ul>
   </div></div>
  </div>
+ <div class="cta"><a href="#projects" class="btn p"><i class="fas fa-arrow-down"></i>See the projects I built at Semtech</a></div>
 </div></section>
 
 <section id="projects"><div class="wrap">
  <h2>Projects</h2>
- <p class="lead">What I build at Semtech, followed by products I built while studying.</p>
+ <p class="lead">Company projects first, then what I built in college and on my own.</p>
  <div class="gh"><i class="fas fa-briefcase"></i><h3 class="sh">Work at Semtech</h3></div>
  <p class="gd">AI tooling and platform projects built for AirLink router engineering.</p>
  <div class="feat" id="ft"></div>
