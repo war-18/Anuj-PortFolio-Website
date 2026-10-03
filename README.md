@@ -1,124 +1,139 @@
-Anuj Waghulde Portfolio
-Welcome to the repository for my personal portfolio website, showcasing my skills, projects, experience, and achievements as a Software Developer and Machine Learning Enthusiast. This website is designed to be modern, responsive, and visually engaging, highlighting my technical expertise and professional journey.
-Table of Contents
+# Anuj Waghulde | Software Engineer Portfolio
 
-Overview
-Features
-Technologies Used
-Setup Instructions
-Usage
-File Structure
-Contributing
-License
-Contact
+A modern single-page portfolio website for Anuj Waghulde, showcasing software engineering work across backend systems, embedded/network platforms, AI-assisted tooling, and full-stack product development.
 
-Overview
-This portfolio website serves as a digital resume for Anuj Waghulde, featuring sections for education, professional experience, projects, skills, awards, certifications, and contact information. The site is built with a focus on responsiveness, modern design, and smooth animations to create an engaging user experience across devices.
-Features
+## Overview
 
-Responsive Design: Fully optimized for mobile, tablet, and desktop devices using Tailwind CSS.
-Interactive Animations: Includes slide-in, fade-in, and pulse animations triggered on scroll for a dynamic experience.
-Highlighted Experience: Emphasizes the latest role at Vspace Software Pvt. Limited with distinct styling.
-Comprehensive Sections:
-Home: A vibrant hero section introducing Anuj Waghulde.
-Education: Details of academic background.
-Experience: Professional roles, with a focus on the most recent internship.
-Projects: A showcase of diverse projects with descriptions and placeholder images.
-Skills: Categorized technical skills in programming, frameworks, and tools.
-Awards & Achievements: A list of notable accomplishments and recognitions.
-Certifications: Key certifications in software development and machine learning.
-Resume: A downloadable PDF resume summarizing all sections.
-Contact: Links to LinkedIn, GitHub, and contact details.
+This project is a personal portfolio built as a responsive static website with a dark, professional design and a strong engineering focus. It highlights:
 
+- current work at Semtech Advanced Systems
+- backend and embedded systems experience
+- AI and agentic engineering projects
+- academic and personal projects
+- achievements, education, and certifications
+- contact details and resume download
 
-Hamburger Menu: Mobile-friendly navigation with a toggleable menu.
-Smooth Scrolling: Seamless navigation between sections using anchor links.
+## Featured profile
 
-Technologies Used
+Anuj is a software engineer building tools and platforms for:
 
-HTML5: Structure of the website.
-Tailwind CSS: Responsive styling and layout.
-JavaScript: Scroll-based animations using Intersection Observer.
-CSS Animations: Custom animations for slide-in, fade-in, and pulse effects.
-Markdown: For this README file.
+- backend services and REST APIs
+- embedded and LTE/5G router systems
+- AI agents and RAG-based workflows
+- CI/CD pipelines and release automation
+- network diagnostics, VPN, DHCP/DNS, and system observability
 
-Setup Instructions
-To run this project locally, follow these steps:
+He currently works as a Software Engineer at Semtech Advanced Systems, Pune, and previously served as a Software Engineer Intern and Software Developer Intern.
 
-Clone the Repository:
-git clone https://github.com/war-18/Anuj_PortFolio_Website.git
+## Site sections
 
+The portfolio includes:
 
-Navigate to the Project Directory:
-cd Anuj_PortFolio_Website
+- Hero section and intro
+- About / focus areas
+- Experience timeline
+- Featured work projects
+- Academic and personal projects
+- Skills and tools
+- Achievements and competitive programming highlights
+- Education and certifications
+- Contact and resume download
 
+## Key technologies
 
-Open the Website:
+The website reflects a broad technical stack, including:
 
-Open index.html in a web browser (e.g., Chrome, Firefox) directly, as no server is required.
+- Python
+- C++
+- Java
+- JavaScript
+- Flask and REST APIs
+- AI agents, MCP, and RAG workflows
+- GitHub Actions and CI/CD
+- Linux, networking, and embedded systems
+- Docker, Grafana, Plotly
+- MySQL, PostgreSQL, MongoDB, Firebase
 
-Alternatively, use a local development server for a better experience:
-npx http-server
+## Featured projects
 
-Then navigate to http://localhost:8080 in your browser.
+### Work at Semtech
 
+- AI-Powered CVE Analysis Pipeline
+  - CVE triage for embedded Linux systems using BlackDuck, NVD, OSV.dev, and Yocto data
+  - automated patch generation and review flow
 
+- NetworkOps Copilot
+  - RAG-powered assistant for device analysis using REST and SSH tools
+  - helps with routes, VPN, DHCP/DNS, logs, and operational triage
 
-Add Images (Optional):
+- Release Intelligence
+  - AI-driven investigation layer over GitHub Actions, dashboards, and CI logs
+  - correlates failures across build, device, and network systems
 
-Replace placeholder images in the images/ directory (e.g., images/Anuj_W.jpeg, images/technovate.png) with actual images.
-Update image paths in index.html if necessary.
+- Voice-Controlled Router Management
+  - speech-driven router operations via REST interfaces and cloud control endpoints
 
+### Academic and personal projects
 
-Update Resume (Optional):
+- TECHNOVATE 2023 event website
+- Cineflix movie platform
+- Dental disease prediction using ML
+- Mindmate mental-health assistant
+- Healthcare app
+- Automated face lock with OpenCV and Arduino
+- Chemical company website
+- Blood bank system
+- Execution dashboards for embedded platform operations
 
-Place the resume file (Anuj_Waghulde_Resume.pdf) in the root directory or update the download link in index.html.
+## Local setup
 
+This is a static HTML portfolio, so no build tool or framework install is required.
 
+### Option 1: open directly
 
-Usage
+Open `index.html` in a browser.
 
-View the Website: Open index.html in a browser to explore the portfolio.
-Customize Content:
-Update personal details (e.g., email, phone, LinkedIn, GitHub) in the Contact section.
-Replace placeholder images with actual project screenshots or a personal photo.
-Modify text in index.html to reflect updated education, experience, or project details.
+### Option 2: run a local web server
 
+From the project directory:
 
-Deploy to GitHub Pages:
-Push the repository to GitHub.
-Go to the repository settings on GitHub.
-Enable GitHub Pages under the "Pages" section, selecting the main branch and / (root) directory.
-Access the live site at https://<username>.github.io/Anuj_PortFolio_Website.
+```bash
+python -m http.server 8000
+```
 
+Then open:
 
+```text
+http://localhost:8000
+```
 
-File Structure
-Anuj_PortFolio_Website/
-├── images/
-│   ├── Anuj_W.jpeg            # Placeholder for personal photo
+## Project structure
+
+```text
+Anuj_Portfolio_Website/
+├── index.html
+├── README.md
 ├── resume/
-│   ├── Anuj_Waghulde_Resume.pdf   # Resume file to get download from website (optional)
-├── index.html                 # Main HTML file
-└── README.md                  # This file
+│   └── Anuj_Waghulde_Resume.pdf
+└── (additional static assets if added later)
+```
 
-Contributing
-This is a personal portfolio project, but suggestions or improvements are welcome! Please:
+## Deployment
 
-Fork the repository.
-Create a new branch (git checkout -b feature/improvement).
-Make your changes and commit (git commit -m "Add improvement").
-Push to the branch (git push origin feature/improvement).
-Create a pull request with a clear description of changes.
+This site can be deployed to any static hosting service, including GitHub Pages or Netlify.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
-Feel free to reach out for collaboration or inquiries:
+## Contact
 
-Email: anujrw18@gmail.com
-Phone: +91-9146237138
-LinkedIn: https://www.linkedin.com/in/anuj-waghulde-37ab49224/
-GitHub: https://github.com/war-18
+- Email: anujrw18@gmail.com
+- Phone: +91 91462 37138
+- LinkedIn: https://www.linkedin.com/in/anuj-waghulde-37ab49224/
+- GitHub: https://github.com/war-18
 
-Thank you for visiting my portfolio repository!
+## Resume
+
+A downloadable PDF resume is embedded in the portfolio and is expected to live in the `resume/` folder.
+
+## License
+
+This repository is intended for personal portfolio use. Please check the project license file if one is added to the repository.
+
